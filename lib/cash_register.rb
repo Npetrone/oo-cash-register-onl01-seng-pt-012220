@@ -28,9 +28,9 @@ class CashRegister
     else
       @items << title
     end
-    @newtotal += price*quantity
-    @last_transaction_amount = @newtotal
-    @newtotal
+    @total += price*quantity
+    @last_transaction_amount = @total
+    @total
   end
 
   def apply_discount()
