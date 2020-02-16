@@ -1,12 +1,3 @@
-
-
-
-require pry
-
-
-
-
-
 class CashRegister
 
   attr_accessor :total, :discount, :last_transaction_amount, :items
@@ -46,7 +37,6 @@ class CashRegister
 
   def void_last_transaction()
     @total -= @last_transaction_amount
-    binding.pry
   end
 
 end
